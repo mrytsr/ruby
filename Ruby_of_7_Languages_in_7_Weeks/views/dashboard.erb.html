@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/styles/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/vendors/html5shiv.min.js"></script>
+      <script src="/vendors/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">活动首页</a></li>
+          <li class="active"><a href="/dashboard/notice">习题面板</a></li>
+          <li><a href="/result">运行结果</a></li>
+        </ul>
+        <h3 class="text-muted">七周七语言之Ruby</h3>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <ul class="nav nav-sidebar">
+              <li <% if params[:file_name] == "notice" %> class="active" <% end %> ><a href="/dashboard/notice">答题须知</a></li>
+              <li <% if params[:file_name] == "1" %> class="active" <% end %> ><a href="/dashboard/1">1. 平均数 <span class="star"><span class="glyphicon glyphicon-star"></span></span></a></li>
+              <li <% if params[:file_name] == "2" %> class="active" <% end %> ><a href="/dashboard/2">2. 矩阵转置 <span class="star"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></span></a></li>
+              <li <% if params[:file_name] == "3" %> class="active" <% end %> ><a href="/dashboard/3">3. DSL练习<span class="star"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></span></a></li>
+              <li <% if params[:file_name] == "4" %> class="active" <% end %> ><a href="/dashboard/4">4. 正则与字串 <span class="star"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></span></a></li>
+              <li <% if params[:file_name] == "5" %> class="active" <% end %> ><a href="/dashboard/5">5. 挑战<span class="star"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></span></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-9 main">
+            <%= markdown(params[:file_name].to_sym) %>
+          </div>
+        </div>      
+      </div>
+
+      <div class="footer">
+        <p>&copy; shruby 2014 | <a href="http://shruby.github.io/">http://shruby.github.io</a></p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/vendors/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

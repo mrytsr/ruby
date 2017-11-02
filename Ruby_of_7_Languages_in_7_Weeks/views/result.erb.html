@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/styles/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/vendors/html5shiv.min.js"></script>
+      <script src="/vendors/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/">活动首页</a></li>
+          <li><a href="/dashboard/notice">习题面板</a></li>
+          <li class="active"><a href="/result">运行结果</a></li>
+        </ul>
+        <h3 class="text-muted">七周七语言之Ruby</h3>
+      </div>
+      
+      <!--
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>序号</th>
+              <th>状态</th>
+              <th>耗时 (s)</th>
+              <th>代码大小 (byte)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="success">
+              <td>1</td>
+              <td>成功</td>
+              <td>0.325</td>
+              <td>325</td>
+            </tr>
+            <tr class="info">
+              <td>2</td>
+              <td>编译错误</td>
+              <td>/</td>
+              <td>/</td>
+            </tr>
+            <tr class="danger">
+              <td>3</td>
+              <td>结果错误</td>
+              <td>0.726</td>
+              <td>235</td>
+            </tr>
+            <tr class="danger">
+              <td>4</td>
+              <td>结果错误</td>
+              <td>3.726</td>
+              <td>727</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="well">得分：<span style="color: red">25</span> 分。很遗憾，您的报名费泡汤了。</div>
+               
+      </div>
+      -->
+      
+      <% @arr_str.each_with_index do |arr, i| %>
+        <div class="container">
+          <p>第<%= i+1 %>题</p>
+          <div class="well">
+            <% arr.each do |re| %>
+              <p><%= re %></p>
+            <% end %>        
+          </div>
+        </div>      
+      <% end %>
+      
+
+      <div class="footer">
+        <p>&copy; shruby 2014 | <a href="http://shruby.github.io/">http://shruby.github.io</a></p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/vendors/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+ 1743  wget "http://download-cf.jetbrains.com/ruby/RubyMine-6.3.3.tar.gz"
+ 1759  irb
+ 1762  gem --version
+ 1763  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1766  sudo gem install bundler
+ 1767  which ruby
+ 1768  which gem
+ 1769  sudo gem install bundle
+ 1771  gem install bundler -p "http://ruby.taobao.org/"
+ 1774  gem sources -l
+ 1776  sudo gem sources --remove http://rubygems.org/
+ 1777  gem sources -l
+ 1779  sudo gem install bundle
+ 1782  bundle
+ 1789  git clone "https://coding.net/mrytsr/Ruby_of_7_Languages_in_7_Weeks.git"
+ 1791  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1795  vim Gemfile
+ 1799  gem install bundler
+ 1802  pkill pptp
+ 1803  sudo pkill pptp
+ 1807  sudo apt-get seatch ruby
+ 1808  sudo apt-get search ruby
+ 1809  sudo apt-get list
+ 1810  sudo apt-get l
+ 1811  sudo apt-cache search ruby
+ 1812  sudo apt-cache search ruby-lb
+ 1813  sudo apt-cache search ruby-lib
+ 1814  sudo apt-cache search ruby lib
+ 1815  sudo apt-cache search redcarpet
+ 1816  sudo apt-get install ruby-redcarpet
+ 1817  sudo apt-cache search thin
+ 1818  sudo apt-cache search ruby-thin
+ 1819  sudo apt-cache search eventmachine
+ 1820  sudo apt-get install ruby-eventmachine
+ 1821  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1822  ls
+ 1823  gem list
+ 1824  rvm list
+ 1825  vim Gemfile
+ 1826  bundle
+ 1827  irb
+ 1828  sudo apt-get install rvm
+ 1829  ruby -v
+ 1830  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1831  ls
+ 1832  bundle
+ 1833  gem install eventmachine -v '1.0.3'
+ 1834  sudo gem install eventmachine -v '1.0.3'
+ 1835  bundle
+ 1836  sudo gem install eventmachine -v '1.0.3'
+ 1839  sudo bundle
+ 1840  bundle
+ 1841  ruby -v
+ 1842  which ruby
+ 1843  gem list
+ 1844  vim Gemfile
+ 1845  gem list
+ 1846  bundle
+ 1847  vim /tmp/bundler20140816-10718-6a7o3r/eventmachine-1.0.3/gems/eventmachine-1.0.3/ext/gem_make.out
+ 1848  cd /tmp/bundler20140816-10718-6a7o3r/
+ 1860  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1861  vim Gemfile
+ 1862  bundle
+ 1863  gem install redcarpet -v '3.1.2'
+ 1864  sudo gem install redcarpet -v '3.1.2'
+ 1865  bundle
+ 1892  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1893  ls
+ 1894  git push 
+ 1898  cd Ruby_of_7_Languages_in_7_Weeks
+ 1900  git pull
+ 1901  git commit 
+ 1902  git push
+ 1903  git pull
+ 1904  git stash
+ 1905  git pull
+ 1906  git st
+ 1907  git stash
+ 1908  git pull
+ 1909  git status
+ 1910  git diff
+ 1911  git diff > local.diff
+ 1912  git checkout .
+ 1913  git status
+ 1914  git pull
+ 1915  git apply local.diff
+ 1916  git status
+ 1917  vim local.diff 
+ 1918  ls
+ 1919  git apply --helpl
+ 1920  ls
+ 1921  git apply --apply local.diff
+ 1922  vim local.diff 
+ 1923  git apply local.diff
+ 1924  git status
+ 1925  vim exam/1.rb 
+ 1926  git apply test.diff
+ 1927  git st
+ 1928  git status
+ 1929  git diff exam/1.rb
+ 1931  rm *.diff
+ 1933  git commit 
+ 1934  git 
+ 1935  git status
+ 1936  git add exam/
+ 1937  git commit
+ 1938  git status
+ 1939  git commit
+ 1940  git commit -m "finish test"
+ 1941  git config --global user.email "you@example.com"
+ 1942  git commit -m "finish test"
+ 1943  git push
+ 1944  ls
+ 1961  git push 
+ 1965  git status 
+ 1966  git add 
+ 1968  cat exam/1.rb 
+ 1969  git pull
+ 1970  cat exam/1.rb 
+ 1971  git push
+ 1972  cd Ruby_of_7_Languages_in_7_Weeks/
+ 1987  sudo apt-get install ruby1.9.1-dev 
+ 1989  gem -m
+ 1994  bundle
+ 1996  thin start
